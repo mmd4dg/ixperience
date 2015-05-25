@@ -17,6 +17,38 @@ end
 puts index_of("z", "Molly")
 puts index_of("m", "Molly")
 
+def find_by_name(array, name)
+	return_val = nil
+	array.each do |unique_hash|
+		if unique_hash[:name]==name
+			return_val = unique_hash
+			break
+		
+	end
+end
+
+people = [
+  {
+    :id => 1,
+    :name => "bru"
+  },
+  {
+    :id => 2,
+    :name => "ski"
+  },
+  {
+    :id => 3,
+    :name => "brunette"
+  },
+  {
+    :id => 4,
+    :name => "ski"
+  }
+]
+
+puts find_by_name(people, "ski")
+
+
 
 
 
